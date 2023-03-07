@@ -7,9 +7,9 @@ function App() {
   const [catData, setCatData] = useState(""); 
 
   useEffect(() => {
-    axios.get("https://catfact.ninja/fact").then((response) =>{
-      setCatData([response.data]);
-      console.log(response.data)
+    axios.get("https://catfact.ninja/breeds").then((response) =>{
+      setCatData(response.data.data);
+      console.log(response.data);
     });
   }, []);  
  
@@ -28,12 +28,11 @@ function App() {
   return (
     <div className="App">
 
-      {catData && catData.map((val) => {
+      {catData && catData.map((val, index) => {
         return(
-          <li key={val}>{val.fact}</li>
-        );
-      })};
-
+          <li key ={index}>{val.breed}</li>
+        ); 
+      })}
 
     </div>
   );
