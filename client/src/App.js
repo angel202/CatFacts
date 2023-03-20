@@ -1,40 +1,20 @@
 import './App.css';
-import axios from "axios"; 
-import {useState, useEffect} from 'react'; 
+import CatPage from './CatPage';
+import Home from './Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
-
-  const [catData, setCatData] = useState(""); 
-
-  useEffect(() => {
-    axios.get("https://catfact.ninja/breeds").then((response) =>{
-      setCatData(response.data.data);
-      console.log(response.data);
-    });
-  }, []);  
- 
-  /*
-  const fetchData = async () => { 
-    try { 
-      const data = await axios.get("https://cat-fact.herokuapp.com/facts");
-      console.log(data); 
-      setCatData(data);
-    } catch (err){ 
-      console.log(err); 
-    }
-  }; */
-
-
+function App(){
   return (
-    <div className="App">
-
-      {catData && catData.map((val, index) => {
-        return(
-          <li key ={index}>{val.breed}</li>
-        ); 
-      })}
-
-    </div>
+    <div className="wrapper"> 
+        <BrowserRouter>
+          <Routes>
+            <Route exact path = "/" element={<Home/>}>
+            </Route>
+            <Route exact path="/CatPage" element={<CatPage/>}>
+            </Route>
+          </Routes> 
+        </BrowserRouter>
+      </div>
   );
 }
 
