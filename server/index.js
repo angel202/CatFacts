@@ -3,10 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const axios = require('axios');
-require('dotenv').config()
 
-
-const AuthKey = process.env.TMDBKey;
 
 app.use(cors());
 app.use(express.json()); 
@@ -18,7 +15,6 @@ app.get('/CatBreeds', (req, res) => {
   .then(response => {
     let Breeding = response.data.data; 
     res.json(Breeding);
-    console.log(response.data.data);
   })
   .catch(error => {
     console.log(error);
@@ -35,7 +31,6 @@ app.get('/CatFacts', (req, res) => {
   .then(response => {
     let CatFact = response.data.fact; 
     res.json(CatFact);
-    console.log(response.data.fact);
   })
   .catch(error => {
     console.log(error);
@@ -47,19 +42,22 @@ app.get('/CatFacts', (req, res) => {
   })
 /////////////////////////////////////////////////////
 
-/*
-app.get('/movies', (req, res) => {
-  axios.get(`https://api.themoviedb.org/3/movie/550?api_key=${AuthKey}`)
-.then(response => {
-  let movieType = response.data; 
-  res.json(movieType);
-  console.log(response.data);
+
+app.get('/DogFacts', (req, res) => {
+    axios.get('https://dogapi.dog/api/v2/breeds')
+  .then(response => {
+    let DogFact = response.data.data;
+    res.json(DogFact);
+    console.log(DogFact)
+  })
+  .catch(error =>{
+    console.log(error); 
+  });
+});
+
+app.get('/DogFacts', (req, res) => {
+  res.json(DogFact)
 })
-.catch(error => {
-  console.log(error);
-});
-});
-*/
 
 app.listen(3001, () => { 
     console.log("Running on port 3001")
