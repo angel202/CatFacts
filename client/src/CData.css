@@ -9,5 +9,21 @@
     margin-left: auto;
     grid-gap: .5rem;
     break-inside: avoid-column;
-
+    min-height: 300px;
+    justify-content: space-evenly;
 }
+.card h4 {
+    color:bisque;
+  }
+
+.card h3{
+    color:aqua
+}
+
+.card li{
+    color:blanchedalmond;
+    text-align: start;
+}
+
+
+
