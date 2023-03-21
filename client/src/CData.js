@@ -5,7 +5,7 @@ const CData = ({catData}) => {
         <div class = "card-deck">
                   <div class="card-body">
                     <div class="d-inline-flex">
-                      <div class="card" style={{backgroundColor:'black'}}>
+                      <div class="card" style={{backgroundColor:'#1F2124'}}>
                           <h3 class="card-title">The cat's breed is {catData.breed}</h3>
                           <h4 class="card-text"> Some Facts about the cat: </h4>
                           <ul>

@@ -11,19 +11,20 @@
     break-inside: avoid-column;
     min-height: 300px;
     justify-content: space-evenly;
+    padding: 1em;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
 .card h4 {
-    color:bisque;
+    color: whitesmoke;
   }
 
 .card h3{
-    color:aqua
+    color:#F6B352
 }
 
 .card li{
-    color:blanchedalmond;
+    color:whitesmoke;
     text-align: start;
 }
-
 
 
