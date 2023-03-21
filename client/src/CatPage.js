@@ -32,6 +32,7 @@ function CatPage() {
             <div class="dropdown-menu dropdown-menu-end">
                 <a href="http://localhost:3000/" class="dropdown-item">Home</a>
                 <a href="http://localhost:3000/CatPage" class="dropdown-item">Cat Page </a>
+                <a href="http://localhost:3000/DogPage" class="dropdown-item">Dog Page </a>
             </div>
     </div>
     

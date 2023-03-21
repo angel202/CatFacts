@@ -1,0 +1,40 @@
+.card-deck{
+    display: inline-grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(1, 300px 1fr);
+    min-height: 200px;
+}
+
+.card{
+    margin-top: 10px;
+    margin-left: auto;
+    grid-gap: .5rem;
+    break-inside: avoid-column;
+    min-height: 200px;
+    justify-content: space-evenly;
+    padding: 1em;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+
+.card h3{
+    color:#F6B352
+}
+
+.card p{
+    color: whitesmoke
+}
+
+.HeaderFact h1{
+    color:#F6B352
+}
+
+.Dogfact p{
+    color:#F6B352
+}
+
+.button{
+    background-color: #F6B352;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+

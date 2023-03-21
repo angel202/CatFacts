@@ -43,22 +43,38 @@ app.get('/CatFacts', (req, res) => {
 /////////////////////////////////////////////////////
 
 
-app.get('/DogFacts', (req, res) => {
+app.get('/DogBreeds', (req, res) => {
     axios.get('https://dogapi.dog/api/v2/breeds')
   .then(response => {
-    let DogFact = response.data.data;
-    res.json(DogFact);
-    console.log(DogFact)
+    let DogBreed = response.data.data;
+    res.json(DogBreed);
   })
   .catch(error =>{
     console.log(error); 
   });
 });
 
-app.get('/DogFacts', (req, res) => {
-  res.json(DogFact)
+app.get('/DogBreeds', (req, res) => {
+  res.json(DogBreed)
 })
+
+app.get('/DogFacts', (req, res) => {
+  axios.get('https://dogapi.dog/api/v2/facts')
+.then(response => {
+  let DogFact = response.data.data;
+  res.json(DogFact);
+})
+.catch(error =>{
+  console.log(error); 
+});
+});
+
+app.get('/DogFacts', (req, res) => {
+res.json(DogFact)
+})
+
 
 app.listen(3001, () => { 
     console.log("Running on port 3001")
 })
+
