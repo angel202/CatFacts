@@ -1,3 +1,5 @@
+import './CData.css';
+
 const CData = ({catData}) => {
     return (
         <div class = "card-deck">
