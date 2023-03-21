@@ -1,0 +1,13 @@
+.card-deck{
+    display: inline-grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(1, 300px 1fr);
+}
+
+.card{
+    margin-top: 10px;
+    margin-left: auto;
+    grid-gap: .5rem;
+    break-inside: avoid-column;
+
+}

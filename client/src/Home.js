@@ -6,16 +6,13 @@ function Home() {
 
   return (
        
-<div class="bs-example">
-    <div class="btn-group">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Right-aligned Dropdown Menu</button>
-        <div class="dropdown-menu dropdown-menu-end">
-            <a href="http://localhost:3000/" class="dropdown-item">Home</a>
-            <a href="http://localhost:3000/CatPage" class="dropdown-item">Cat Page </a>
-           
-        </div>
+    <div style={{ float:`left` }} class="button">
+        <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Test your luck</button>
+            <div class="dropdown-menu dropdown-menu-end">
+                <a href="http://localhost:3000/" class="dropdown-item">Home</a>
+                <a href="http://localhost:3000/CatPage" class="dropdown-item">Cat Page </a>
+            </div>
     </div>
-</div>
 
   );
 }

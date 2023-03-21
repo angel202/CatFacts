@@ -1,8 +1,9 @@
 import axios from "axios"; 
+import './CatPage.css';
+import CData from './CData';
 import {useState, useEffect} from 'react'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/dist/jquery.min.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
+
 
 function CatPage() {
 
@@ -25,27 +26,26 @@ function CatPage() {
 
   return (
     <div class="App">
-    <h1> Random Fact of the day: </h1>
-    <p1>{fact}</p1>
-      {catData && catData.map((val, index) => {
-        return(
-          <div class="row row-cols">
-              <div class="col">
-                  <div class="card">
-                      <div class="card-body">
-                          <h5 class="card-title">The cat's breed is {val.breed}</h5>
-                          <h6 class="card-text"> Some Facts about the cat: </h6>
-                          <li> It's country of origin is: {val.country}</li>
-                          <li> Their hair coat is: {val.coat}.</li>
-                          <li> It's pattern is: {val.pattern}.</li>
-                          <p/>
-                      </div>
-                  </div>
-              </div>
-          </div> 
-        ); 
-      })}
 
+    <div style={{ float:`left` }} class="button">
+        <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Test your luck</button>
+            <div class="dropdown-menu dropdown-menu-end">
+                <a href="http://localhost:3000/" class="dropdown-item">Home</a>
+                <a href="http://localhost:3000/CatPage" class="dropdown-item">Cat Page </a>
+            </div>
+    </div>
+    
+    <br/>
+    <br/>
+
+        <h1> Random Fact of the day: </h1>
+        <p1>{fact}</p1>
+        <br/>
+        <div class = "card-deck">
+            {catData && catData.map((val, index) => (
+                <CData key={index} catData={val} />
+                ))}
+        </div>
     </div>
   );
 }
