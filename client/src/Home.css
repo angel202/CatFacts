@@ -1,0 +1,36 @@
+.row{
+    justify-content: center;
+    grid-gap: .5rem;
+    min-height: 200px;
+    position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0; 
+
+}
+.Home {
+    background-color: #383A3F;
+  }
+
+  .row a{
+    background-color: #F6B352;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+.row h5{
+    color:whitesmoke
+}
+.row p{
+    color:whitesmoke
+}
+
+.card{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    background-color: #1F2124;
+}
+
+.card-img-top {
+    height: 25vw;
+    object-fit: cover;
+}

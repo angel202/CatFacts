@@ -1,18 +1,38 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './Home.css'
+import cat from './cat.jpg';
+import dog from './dog.jpg';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 function Home() {
 
   return (
-       
-    <div style={{ float:`left` }} class="button">
-        <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-bs-toggle="dropdown">Test your luck</button>
-            <div class="dropdown-menu dropdown-menu-end">
-                <a href="http://localhost:3000/" class="dropdown-item">Home</a>
-                <a href="http://localhost:3000/CatPage" class="dropdown-item">Cat Page </a>
-                <a href="http://localhost:3000/DogPage" class="dropdown-item">Dog Page </a>
+    <div className ="Home">
+
+        <div class="row vh-100">
+            <div class="col-md">
+                <div class="card">
+                <div class="card-body">
+                    <img src={cat} class="card-img-top" alt="Cute cat"/> 
+                    <h5 class="card-title">Are you a cat person?</h5>
+                    <p class="card-text">Maybe this will interest you!</p>
+                    <a href="http://localhost:3000/CatPage" class="btn">Take me to the cats!</a>
+                </div>
+                </div>
             </div>
+            <div class="col-md">
+                <div class="card">
+                <div class="card-body">
+                    <img src={dog} class="card-img-top" alt="Cute dog"/> 
+                    <h5 class="card-title">Are you a dog person?</h5>
+                    <p class="card-text">Maybe this will interest you!</p>
+                    <a href="http://localhost:3000/DogPage" class="btn">Take me to the dogs!</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
   );
