@@ -1,5 +1,5 @@
 import axios from "axios"; 
-import CData from './CData';
+import KittenData from './KittenData';
 import './CatPage.css';
 import {useState, useEffect} from 'react'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,7 +25,7 @@ function CatPage() {
   }, []);  
 
   return (
-    <div class="App">
+    <div class="CatPage">
 
     <div style={{ float:`left` }} class="button">
         <button type="button" class="btn dropdown-toggle btn-sm" data-bs-toggle="dropdown">Test your luck</button>
@@ -44,7 +44,7 @@ function CatPage() {
         <br/>
         <div class = "card-deck">
             {catData && catData.map((val, index) => (
-                <CData key={index} catData={val} />
+                <KittenData key={index} catData={val} />
                 ))}
         </div>
 

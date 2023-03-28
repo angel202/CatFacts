@@ -1,3 +1,8 @@
+.CatPage{
+    text-align: center;
+    background-color: #383A3F;
+}
+
 .button{
     background-color: #F6B352;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
@@ -6,5 +11,36 @@
     color: #F6B352;
     font:bold;
     font-size: small;
+    display: flex;
 }
+.card-deck{
+    display: inline-grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(1, 300px 1fr);
+}
+
+.card{
+    margin-top: 10px;
+    margin-left: auto;
+    grid-gap: .5rem;
+    break-inside: avoid-column;
+    min-height: 300px;
+    justify-content: space-evenly;
+    padding: 1em;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+.card h4 {
+    color: whitesmoke;
+  }
+
+.card h3{
+    color:#F6B352
+}
+
+.card li{
+    color:whitesmoke;
+    text-align: start;
+}
+
+
 

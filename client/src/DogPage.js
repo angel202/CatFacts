@@ -1,7 +1,10 @@
 import axios from "axios"; 
 import {useState, useEffect} from 'react'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import DogData from './DogData'; 
+import DogData from './DogData.js'; 
+import './DogPage.css';
+
+
 
 function DogPage() {
 
@@ -24,7 +27,7 @@ function DogPage() {
   }, []); 
 
   return (
-    <div className="App">
+    <div className="DogPage">
     <div style={{ float:`left` }} class="button">
         <button type="button" class="btn dropdown-toggle btn-sm" data-bs-toggle="dropdown">Test your luck</button>
             <div class="dropdown-menu dropdown-menu-end">

@@ -25,6 +25,11 @@
     color: whitesmoke
 }
 
+.DogPage{
+    text-align: center;
+    background-color: #383A3F;
+
+}
 .HeaderFact h1{
     color:#F6B352
 }
@@ -42,4 +47,5 @@
     color: #F6B352;
     font:bold;
     font-size: small;
+    display: flex;
 }

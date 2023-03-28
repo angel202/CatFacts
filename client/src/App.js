@@ -1,4 +1,3 @@
-import './App.css';
 import CatPage from './CatPage';
 import DogPage from './DogPage';
 import Home from './Home';

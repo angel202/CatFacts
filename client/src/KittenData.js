@@ -1,6 +1,4 @@
-import './CData.css';
-
-const CData = ({catData}) => {
+const KittenData = ({catData}) => {
     return (
         <div class = "card-deck">
                   <div class="card-body">
@@ -22,4 +20,4 @@ const CData = ({catData}) => {
     )
 }; 
 
-export default CData;
+export default KittenData;

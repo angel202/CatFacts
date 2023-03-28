@@ -1,5 +1,3 @@
-import './DogData.css';
-
 const DogData = ({dogData}) => {
     return (
         <div class = "card-deck">
