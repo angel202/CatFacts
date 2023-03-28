@@ -52,7 +52,9 @@ function DogPage() {
                 <DogData key={index} dogData={val.attributes} />
                 ))}
         </div>
-
+        <div className='Footer'>
+            <p>Powered by Stratonauts Dog AP</p>
+        </div>
     </div>
   );
 }

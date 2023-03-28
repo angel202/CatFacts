@@ -34,3 +34,21 @@
     height: 25vw;
     object-fit: cover;
 }
+
+.Footer_Contain{
+    color: #F6B352;
+    font:bold;
+    font-size: small;
+}
+
+.Home{
+    display: flex;
+    flex-direction: column;
+	min-height: 100vh;
+}
+.admin-bar #page{
+	min-height: calc(100vh - 32px);
+}
+#page .site-content{
+    flex-grow: 1;
+}

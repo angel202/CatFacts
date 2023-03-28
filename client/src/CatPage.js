@@ -39,7 +39,7 @@ function CatPage() {
     <br/>
     <br/>
 
-        <h1 style ={{color:'#F6B352'}}> Random Fact of the day: </h1>
+        <h1 style ={{color:'#F6B352'}}> Fact of the day: </h1>
         <p1 style ={{color:'#F6B352'}}>{fact}</p1>
         <br/>
         <div class = "card-deck">
@@ -47,6 +47,11 @@ function CatPage() {
                 <CData key={index} catData={val} />
                 ))}
         </div>
+
+        <div className='Footer'>
+            <p>Powered by CatFact Ninja</p>
+        </div>
+
     </div>
   );
 }
